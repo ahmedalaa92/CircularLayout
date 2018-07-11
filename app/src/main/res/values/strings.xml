@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CircularLayout</string>
+    <string name="start_animation">Start Animation</string>
+    <string name="none" />
+</resources>

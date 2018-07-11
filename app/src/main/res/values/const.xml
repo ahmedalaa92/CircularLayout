@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="angle_0">0</integer>
+    <integer name="angle_45">45</integer>
+    <integer name="angle_90">90</integer>
+    <integer name="angle_135">135</integer>
+    <integer name="angle_180">180</integer>
+    <integer name="angle_225">225</integer>
+    <integer name="angle_270">270</integer>
+    <integer name="angle_315">315</integer>
+</resources>

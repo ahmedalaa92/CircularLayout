@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="@dimen/bg_circle_radius"
+            android:layout_height="@dimen/bg_circle_radius"
+            android:background="@drawable/circle_grey"
+            android:contentDescription="@string/none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/none"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgGreenCircle"
+            android:layout_width="@dimen/item_circle_radius"
+            android:layout_height="@dimen/item_circle_radius"
+            android:background="@drawable/circle_green"
+            android:contentDescription="@string/none"
+            app:layout_constraintCircle="@+id/imgCenter"
+            app:layout_constraintCircleAngle="@integer/angle_0"
+            app:layout_constraintCircleRadius="@dimen/circle_distance_radius" />
+
+        <ImageView
+            android:id="@+id/imgYellowCircle"
+            android:layout_width="@dimen/item_circle_radius"
+            android:layout_height="@dimen/item_circle_radius"
+            android:background="@drawable/circle_yellow"
+            android:contentDescription="@string/none"
+            app:layout_constraintCircle="@+id/imgCenter"
+            app:layout_constraintCircleAngle="@integer/angle_45"
+            app:layout_constraintCircleRadius="@dimen/circle_distance_radius" />
+
+        <ImageView
+            android:id="@+id/imgDarkBlueCircle"
+            android:layout_width="@dimen/item_circle_radius"
+            android:layout_height="@dimen/item_circle_radius"
+            android:background="@drawable/circle_purple"
+            android:contentDescription="@string/none"
+            app:layout_constraintCircle="@+id/imgCenter"
+            app:layout_constraintCircleAngle="@integer/angle_90"
+            app:layout_constraintCircleRadius="@dimen/circle_distance_radius" />
+
+        <ImageView
+            android:id="@+id/imgPinkCircle"
+            android:layout_width="@dimen/item_circle_radius"
+            android:layout_height="@dimen/item_circle_radius"
+            android:background="@drawable/circle_pink"
+            android:contentDescription="@string/none"
+            app:layout_constraintCircle="@+id/imgCenter"
+            app:layout_constraintCircleAngle="@integer/angle_135"
+            app:layout_constraintCircleRadius="@dimen/circle_distance_radius" />
+
+        <ImageView
+            android:id="@+id/imgBrownCircle"
+            android:layout_width="@dimen/item_circle_radius"
+            android:layout_height="@dimen/item_circle_radius"
+            android:background="@drawable/circle_brown"
+            android:contentDescription="@string/none"
+            app:layout_constraintCircle="@+id/imgCenter"
+            app:layout_constraintCircleAngle="@integer/angle_180"
+            app:layout_constraintCircleRadius="@dimen/circle_distance_radius" />
+
+
+        <ImageView
+            android:layout_width="@dimen/item_circle_radius"
+            android:layout_height="@dimen/item_circle_radius"
+            android:background="@drawable/circle_blue"
+            android:contentDescription="@string/none"
+            app:layout_constraintCircle="@+id/imgCenter"
+            app:layout_constraintCircleAngle="@integer/angle_225"
+            app:layout_constraintCircleRadius="@dimen/circle_distance_radius" />
+
+        <ImageView
+            android:layout_width="@dimen/item_circle_radius"
+            android:layout_height="@dimen/item_circle_radius"
+            android:background="@drawable/circle_orange"
+            android:contentDescription="@string/none"
+            app:layout_constraintCircle="@+id/imgCenter"
+            app:layout_constraintCircleAngle="@integer/angle_270"
+            app:layout_constraintCircleRadius="@dimen/circle_distance_radius" />
+
+
+        <ImageView
+            android:layout_width="@dimen/item_circle_radius"
+            android:layout_height="@dimen/item_circle_radius"
+            android:background="@drawable/circle_white"
+            android:contentDescription="@string/none"
+            app:layout_constraintCircle="@+id/imgCenter"
+            app:layout_constraintCircleAngle="@integer/angle_315"
+            app:layout_constraintCircleRadius="@dimen/circle_distance_radius" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/btnStartAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="20dp"
+        android:layout_below="@id/constraintLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/button_margin"
+        android:textColor="@color/black"
+        android:text="@string/start_animation" />
+
+</RelativeLayout>
