@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         btnStartAnimation.setOnClickListener(btnStartAnimationOnClick);
     }
 
-    private ValueAnimator animatePlanet(final ImageView planet, long orbitDuration, int startAngle, int endAngle) {
+    private ValueAnimator animateCircle(final ImageView planet, long orbitDuration, int startAngle, int endAngle) {
         ValueAnimator anim = ValueAnimator.ofInt(startAngle, endAngle);
         anim.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
@@ -59,15 +59,15 @@ public class MainActivity extends AppCompatActivity {
     private View.OnClickListener btnStartAnimationOnClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            greenVA = animatePlanet(imgGreenCircle, TimeUnit.SECONDS.toMillis(1), 0, 360);
+            greenVA = animateCircle(imgGreenCircle, TimeUnit.SECONDS.toMillis(1), 0, 360);
             greenVA.start();
-            yellowVA = animatePlanet(imgYellowCircle, TimeUnit.SECONDS.toMillis(1), 45, 405);
+            yellowVA = animateCircle(imgYellowCircle, TimeUnit.SECONDS.toMillis(1), 45, 405);
             yellowVA.start();
-            darkBlueVA = animatePlanet(imgDarkBlueCircle, TimeUnit.SECONDS.toMillis(1), 90, 450);
+            darkBlueVA = animateCircle(imgDarkBlueCircle, TimeUnit.SECONDS.toMillis(1), 90, 450);
             darkBlueVA.start();
-            pinkVA = animatePlanet(imgPinkCircle, TimeUnit.SECONDS.toMillis(1), 135, 495);
+            pinkVA = animateCircle(imgPinkCircle, TimeUnit.SECONDS.toMillis(1), 135, 495);
             pinkVA.start();
-            brownVA = animatePlanet(imgBrownCircle, TimeUnit.SECONDS.toMillis(1), 180, 540);
+            brownVA = animateCircle(imgBrownCircle, TimeUnit.SECONDS.toMillis(1), 180, 540);
             brownVA.start();
         }
     };
